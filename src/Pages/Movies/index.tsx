@@ -8,7 +8,7 @@ import Loading from '../../components/Loading'
 import { IMoviesProps } from '../../interfaces/MoviesProps'
 
 import { SearchContext } from '../../contexts/Search';
-import { API_URL, API_KEY } from '../../services/url'
+import { API_URL } from '../../services/url'
 
 
 const Movies = () => {
@@ -61,7 +61,7 @@ const Movies = () => {
 
   return (
     <>
-      <Results>
+      <Results margin='160px'>
         {value ? `Resultados para: ${value}` : "Últimos lançamentos"}
       </Results>
 
@@ -80,10 +80,10 @@ const Movies = () => {
       <Box>
         {hasPage ? (
           <Button onClick={loadMoreItems} disabled={disabled}>
-            Load More
+            ver mais filmes
           </Button>
         ) : (
-          <Results>
+          <Results margin='30px'>
             Mostrando {counts.total_results} de {counts.total_results} Movies
           </Results>
         )}

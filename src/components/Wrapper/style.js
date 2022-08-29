@@ -6,4 +6,4 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
-`
+  `

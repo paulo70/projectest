@@ -1,4 +1,4 @@
-import React, { createContext, ReactNode, useState } from "react";
+import React, { createContext, useState } from "react";
 import { SearchContextProps } from '../interfaces/SearchProps'
 import { TCommonProps } from '../interfaces/ChildCommonProps'
 

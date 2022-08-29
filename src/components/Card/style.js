@@ -7,7 +7,7 @@ export const CardWrapper = styled.div`
   
   padding: 0 0 32px;
   margin: 48px auto 0;
-  width: 250px;
+  width: ${props => props.width ? props.width : 'auto'};
 `
 export const CardImage = styled.div`
   width: 100%;
@@ -21,6 +21,12 @@ export const CardBody = styled.div`
       object-fit: contain;
     }
 
+    button{
+      width: 90%;
+      margin-left: 10px;
+      font-size: 12px;
+    }
+
     p{
       padding: 15px 10px 0;
       margin: 0;
@@ -28,6 +34,7 @@ export const CardBody = styled.div`
       color:#6C6667;
       font-weight: bold;
       line-height: 1.5;
+      text-align: left;
     }
 
     p + p {

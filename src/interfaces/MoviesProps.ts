@@ -3,5 +3,4 @@ export interface IMoviesProps {
   id: string,
   title: string,
   release_date: string,
-  overview: string
 }

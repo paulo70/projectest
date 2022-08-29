@@ -6,7 +6,6 @@ export const Search = styled.input`
   border: none;
   border-radius: 10px;
   text-align: left;
-  text-transform: uppercase;
   padding: 10px;
   
   width: 50%;
